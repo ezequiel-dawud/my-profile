@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* ABC Camera - fontes locais */
+@font-face {
+    font-family: 'ABC Camera';
+    src: url('./font/ABCCamera-Regular-Trial.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ABC Camera';
+    src: url('./font/ABCCamera-RegularItalic-Trial.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'ABC Camera';
+    src: url('./font/ABCCamera-Medium-Trial.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ABC Camera';
+    src: url('./font/ABCCamera-MediumItalic-Trial.otf') format('opentype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'ABC Camera';
+    src: url('./font/ABCCamera-Bold-Trial.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ABC Camera';
+    src: url('./font/ABCCamera-BoldItalic-Trial.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'ABC Camera';
+    src: url('./font/ABCCamera-Heavy-Trial.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ABC Camera';
+    src: url('./font/ABCCamera-HeavyItalic-Trial.otf') format('opentype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'ABC Camera';
+    src: url('./font/ABCCamera-Black-Trial.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ABC Camera';
+    src: url('./font/ABCCamera-BlackItalic-Trial.otf') format('opentype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+/* ABC Camera Plain - fontes locais */
+@font-face {
+    font-family: 'ABC Camera Plain';
+    src: url('./font/ABCCameraPlain-Regular-Trial.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ABC Camera Plain';
+    src: url('./font/ABCCameraPlain-RegularItalic-Trial.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'ABC Camera Plain';
+    src: url('./font/ABCCameraPlain-Medium-Trial.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ABC Camera Plain';
+    src: url('./font/ABCCameraPlain-MediumItalic-Trial.otf') format('opentype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'ABC Camera Plain';
+    src: url('./font/ABCCameraPlain-Bold-Trial.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ABC Camera Plain';
+    src: url('./font/ABCCameraPlain-BoldItalic-Trial.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'ABC Camera Plain';
+    src: url('./font/ABCCameraPlain-Heavy-Trial.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ABC Camera Plain';
+    src: url('./font/ABCCameraPlain-HeavyItalic-Trial.otf') format('opentype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'ABC Camera Plain';
+    src: url('./font/ABCCameraPlain-Black-Trial.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ABC Camera Plain';
+    src: url('./font/ABCCameraPlain-BlackItalic-Trial.otf') format('opentype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+:root {
+    /* Cores */
+    --color-bg: #0C0E12;
+    --color-card: #15181E;
+    --color-card-border: #23272F;
+    --color-text: #ffffff;
+    --color-text_dois: #768498;
+    --color-text_dois_transp: #7684987c;
+    --color-text-muted: #adadad;
+    --color-primary: #3b82f6;
+    --color-secondary: #8b5cf6;
+    --color-accent: #ec4899;
+    --color-azul: #19E6E6;
+    --color-degrade: linear-gradient(80deg, #944BEB, #3995FE);
+
+    /* Fontes */
+    --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+    --font-camera: 'ABC Camera', sans-serif;
+    --font-roboto: 'Roboto Mono', monospace;
+
+
+    /* Tamanhos de texto */
+    --text-xs: 0.75rem;
+    --text-sm: 0.875rem;
+    --text-base: 1rem;
+    --text-lg: 1.125rem;
+    --text-xl: 1.25rem;
+    --text-2xl: 1.5rem;
+    --text-3xl: 1.875rem;
+    --text-4xl: 2.25rem;
+}
+
+body {
+    background-color: #0C0E12;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow-x: hidden;
+}
+
+#pageHero {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+/* Grade de fundo */
+#pageHero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Brilho radial no centro (como no Lovable) */
+#pageHero::after {
+    content: "";
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+    height: 600px;
+    background: radial-gradient(ellipse at center, rgba(56, 93, 255, 0.08) 0%, transparent 90%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+@keyframes scroll {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-5px, -5px);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+}
+
+.animate-scroll {
+    animation: scroll 1.5s infinite;
+}
+
+body>* {
+    position: relative;
+    z-index: 1;
+}
+
+#container__skills {
+    display: flex;
+    gap: 2%;
+    justify-content: space-evenly;
+
+}
+
+#pageHero {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+#container_apresentation_notice {
+    font-family: var(--font-roboto);
+    color: var(--color-text_dois);
+    border: 1px solid var(--color-text_dois_transp);
+    border-radius: 25px;
+    font-size: var(--text-sm);
+    padding: 9px 22px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 2%;
+}
+
+#container_apresentation_professional {
+    font-family: var(--font-mono);
+    font-size: var(--text-2xl);
+    color: var(--color-primary);
+    text-shadow: 2px 2px 25px #3b82f6;
+}
+
+.pulse-dot {
+    width: 10px;
+    height: 10px;
+    margin-right: 7px;
+    background-color: #22c55e;
+    border-radius: 50%;
+    display: inline-block;
+    animation: pulse-green 1.5s ease-in-out infinite;
+    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7);
+}
+
+@keyframes pulse-green {
+    0% {
+        box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7);
+    }
+
+    70% {
+        box-shadow: 0 0 0 8px rgba(34, 197, 94, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(34, 197, 94, 0);
+    }
+}
+
+.container_apresentation_p {
+    width: 80%;
+    margin-top: 3%;
+    margin-inline: auto;
+    font-family: var(--font-camera);
+    font-size: var(--text-xl);
+    color: var(--color-text_dois);
+    letter-spacing: 1px;
+}
+
+#container_apresentation_button {
+    margin-top: 5%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
+}
+
+.button_linkedin {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    background: var(--color-degrade);
+    color: var(--color-bg);
+    font-family: var(--font-sans);
+    font-size: var(--text-base);
+    font-weight: 600;
+    width: 20%;
+    height: 3rem;
+    border-radius: 15px;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.button_linkedin a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.6rem;
+    color: inherit;
+    text-decoration: none;
+}
+
+.button_linkedin::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--color-degrade);
+    border-radius: inherit;
+    filter: blur(12px);
+    opacity: 0.6;
+    z-index: -1;
+    translate: 0 4px;
+}
+
+.button_contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--color-text_dois_transp);
+    background: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-sans);
+    font-size: var(--text-base);
+    font-weight: 600;
+    width: 20%;
+    height: 3rem;
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.button_contact i {
+    margin-right: 1rem;
+}
+
+.button_contact:hover {
+    background: var(--color-azul);
+    color: var(--color-bg);
+    box-shadow: 0px 0px 10px rgba(25, 230, 230, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+.container_apresentation_skill {
+    color: var(--color-azul)
+}
+
+#container_apresentation {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-align: center;
+    z-index: 1;
+}
+
+#container_apresentation .name {
+    font-size: 4.6rem;
+    color: var(--color-text);
+    font-family: var(--font-camera);
+    font-weight: 700;
+    letter-spacing: -2px;
+}
+
+
+.last_name {
+    font-weight: 700;
+    background: var(--color-degrade);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+}
+
+
+
+#scroll {
+    color: #ffffff;
+    font-size: large;
+}
+
+@media (max-width: 768px) {
+    body {
+        width: 100vw;
+        padding: 0;
+
+    }
+
+    #pageHero {
+        padding: 0;
+        height: 100vh;
+
+    }
+
+    #container_apresentation {
+        width: 90%;
+
+    }
+
+    #container_apresentation_notice {
+        margin-bottom: 6%;
+    }
+
+    #container_apresentation .name {
+        font-size: 2.5rem;
+    }
+
+    .container_apresentation_p {
+        margin-top: 5%;
+        width: 100%;
+        font-size: var(--text-base);
+    }
+
+    .button_linkedin,
+    .button_contact {
+        margin-top: 3%;
+        margin-bottom: 2%;
+        width: 55%;
+        font-size: var(--text-sm);
+    }
+
+    #container__skills {
+        flex-direction: column;
+        padding: 0 16px;
+        gap: 16px;
+    }
+
+    #container_apresentation_button {
+        flex-direction: column;
+    }
+}

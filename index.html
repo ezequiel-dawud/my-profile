@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bg: 'var(--color-bg)',
+                        card: 'var(--color-card)',
+                        'card-border': 'var(--color-card-border)',
+                        muted: 'var(--color-text-muted)',
+                        primary: 'var(--color-primary)',
+                        secondary: 'var(--color-secondary)',
+                        accent: 'var(--color-accent)',
+                        blue:  'var(--color-azul)',
+                    },
+                    fontFamily: {
+                        sans: 'var(--font-sans)',
+                        mono: 'var(--font-mono)',
+                        roboto: 'var(--font-roboto)',
+                    },
+                    fontSize: {
+                        xs: 'var(--text-xs)',
+                        sm: 'var(--text-sm)',
+                        base: 'var(--text-base)',
+                        lg: 'var(--text-lg)',
+                        xl: 'var(--text-xl)',
+                        '2xl': 'var(--text-2xl)',
+                        '3xl': 'var(--text-3xl)',
+                        '4xl': 'var(--text-4xl)',
+                    },
+                }
+            }
+        }
+    </script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="w-100">
+    <div id="pageHero">
+        <!-- Navbar usando Flowbite HTML -->
+        <nav class="fixed top-0 left-0 w-full z-50 bg-gray-900/20 backdrop-blur-xl py-2">
+            <div class="max-w-full flex flex-wrap items-center justify-between mx-auto px-6 md:px-24 py-3">
+                <a href="#" class="flex items-center space-x-3">
+                    <span class="self-center text-lg font-bold whitespace-nowrap text-primary">&lt<span><span
+                                class="self-center text-lg font-mono font-semibold whitespace-nowrap text-white">ED</span><span
+                                class="self-center text-lg font-bold whitespace-nowrap text-primary">/&gt</span>
+                </a>
+                <button data-collapse-toggle="navbar-default" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-default" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+                <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                    <ul
+                        class="font-light flex flex-col p-4 md:p-0 mt-4 border-0 rounded-lg bg-transparent md:flex-row md:space-x-8 md:mt-0 md:bg-transparent dark:bg-transparent font-inter ">
+                        <li><a href="#"
+                                class="block py-2 px-3 text-muted text-base rounded hover:bg-gray-700 md:bg-transparent md:hover:bg-transparent md:hover:text-primary md:p-0 font-medium"
+                                aria-current="page">Home</a></li>
+                        <li><a href="#"
+                                class="block py-2 px-3 text-muted text-base rounded hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 font-medium">About</a>
+                        </li>
+                        <li><a href="#"
+                                class="block py-2 px-3 text-muted text-base rounded hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 font-medium">Services</a>
+                        </li>
+                        <li><a href="#"
+                                class="block py-2 px-3 text-muted text-base rounded hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 font-medium">Pricing</a>
+                        </li>
+                        <li><a href="#"
+                                class="block py-2 px-3 text-muted text-base rounded hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 font-medium">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="container_apresentation">
+            <div id="container_apresentation_notice"><span class="pulse-dot"></span>Disponível para novos projetos</div>
+            <h1 class="name">Ezequiel <span class="last_name">Dawud</span></h1>
+            <h2 id="container_apresentation_professional">QA Engineer</h2>
+            <p class="container_apresentation_p">Experiência em testes manuais, exploratórios, testes de <span
+                    class="container_apresentation_skill">API</span> e automação com <span
+                    class="container_apresentation_skill">Playwright</span>. Em constante evolução para entregar
+                produtos confiáveis e sem falhas.</p>
+            <div id="container_apresentation_button">
+                <button class="button_linkedin"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin w-5 h-5 mr-2">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                            </path>
+                            <rect width="4" height="12" x="2" y="9"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>LinkedIn</a></button>
+                <button class="button_contact"><a href=""> <i class="fa-regular fa-envelope"></i>Contato</a>
+                </button>
+
+            </div>
+        </div>
+        <div>
+            <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-2">
+                <span class="text-xl tracking-widest text-gray-400 ">
+                    scroll
+                </span>
+                <div class="flex flex-col items-center">
+                    <span
+                        class="block w-4 h-4 border-b-2 border-r-2 border-gray-400 rotate-45 animate-scroll delay-300"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Barra de progresso simples (45%) -->
+    <div class="mb-6">
+        <span class="skill">Playwright</span>
+        <span class="spec">Automação</span>
+        <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+            <div class="h-2.5 rounded-full"
+                style="width: 90%; background: linear-gradient(to right, #3b82f6, #8b5cf6, #ec4899)"></div>
+        </div>
+    </div>
+
+    <div id="container__skills">
+        <div id="skills">
+            <div class="mb-1 flex justify-between font-medium">
+                <span class="skill">Playwright</span>
+                <span class="spec">Automação</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700">
+                <div class="h-4 rounded-full text-center text-xs font-medium text-white leading-none"
+                    style="width: 40%; background: linear-gradient(to right, #3b82f6, #8b5cf6, #ec4899)">
+                </div>
+            </div>
+        </div>
+        <div id="skills">
+            <div class="mb-1 flex justify-between font-medium">
+                <span class="skill">Ia nos Testes</span>
+                <span class="spec">Automação</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700">
+                <div class="h-4 rounded-full text-center text-xs font-medium text-white leading-none"
+                    style="width: 85%; background: linear-gradient(to right, #3b82f6, #8b5cf6, #ec4899)">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+
+</html>
