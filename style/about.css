@@ -6,12 +6,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: auto;
-    width: 90vw;
+    margin: 0;
+    width: 100vw;
     height: 100vh;
-    padding: 6% 5%;
+    padding: 6% 10%;
     position: relative;
     z-index: -1;
+    background: linear-gradient(135deg, #0C0E12,#0C0E12, #0C0E12,#12101B, #12101B);
+    box-sizing: border-box;
 
 }
 
@@ -130,9 +132,9 @@
 
     #about {
         margin-top: 25%;
-        width: 95vw;
-        padding: 2% 2%;
-        margin-bottom: 20%;
+        width: 100vw;
+        padding: 2% 5%;
+        padding-bottom: 30%;
         height: auto;
     }
 
@@ -164,7 +166,7 @@
         width: 100%;
         margin-left: 0;
         margin-top: 7%;
-        gap: 7%;
+        gap:15px
     }
 
     #container_info_person {
