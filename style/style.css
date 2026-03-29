@@ -483,4 +483,13 @@ body>* {
     #container_apresentation_button {
         flex-direction: column;
     }
+    .button_contact:hover {
+    
+    transition: all 0s ease-in-out;
+}
+    
+    .button_contact:hover {
+  
+    transition: all 0s ease-in-out;
+}
 }
