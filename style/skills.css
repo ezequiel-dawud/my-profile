@@ -91,9 +91,21 @@
 }
 
 @media (max-width: 768px) {
-#skills__container_dois{
-    flex-direction: column;
-}
 
+    #skills {
+        width: 95vw;
+        height: auto;
+        display: flex;
+        margin-top: 20%;
+    }
+
+    #skills__container_dois {
+        flex-direction: column;
+    }
+
+    .skills__container_skill{
+        margin-top: 0;
+        gap: 4%;
+    }
 
 }

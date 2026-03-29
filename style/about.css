@@ -130,17 +130,21 @@
 
     #about {
         margin-top: 25%;
-        width: 96vw;
+        width: 95vw;
         padding: 2% 2%;
+        margin-bottom: 20%;
+        height: auto;
     }
 
-    .about__sub-title{
+    .about__sub-title {
         font-size: var(--text-base);
         text-transform: uppercase;
     }
-    .about__title{
-        font-size:var(--text-3xl);
+
+    .about__title {
+        font-size: var(--text-3xl);
     }
+
     #about__container_dois {
         margin-top: 7%;
         flex-direction: column;
@@ -149,11 +153,11 @@
     #about__container_description {
         width: 100%;
         padding: 8% 8%;
-       
+
     }
 
-    .about__description{
- font-size: var(--text-base);
+    .about__description {
+        font-size: var(--text-base);
     }
 
     #about__container_info {
