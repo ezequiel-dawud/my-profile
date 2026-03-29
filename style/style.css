@@ -438,6 +438,7 @@ body>* {
     body {
         width: 100vw;
         padding: 0;
+        overflow-x: hidden;
 
     }
 
@@ -483,13 +484,27 @@ body>* {
     #container_apresentation_button {
         flex-direction: column;
     }
+
     .button_contact:hover {
-    
-    transition: all 0s ease-in-out;
-}
-    
-    .button_contact:hover {
-  
-    transition: all 0s ease-in-out;
+        transition: all 0s ease-in-out;
+    }
+
+    /* Scroll animado visível na primeira tela mobile */
+    div.absolute.bottom-10 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        opacity: 1;
+    }
+
+    .absolute.bottom-10 span {
+        font-size: 0.875rem;
+    }
+
+    .absolute.bottom-10 .block {
+        width: 16px;
+        height: 16px;
+    }
 }
 }

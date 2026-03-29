@@ -7,7 +7,9 @@
     <title>Ezequiel Dawud</title>
     <link rel="shortcut icon" href="/icon/ico.ico" type="image/x-icon">
     <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/style/about.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -66,7 +68,7 @@
                             d="M1 1h15M1 7h15M1 13h15" />
                     </svg>
                 </button>
-                <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <div class="hidden w-full md:block md:w-auto md:bg-transparent" id="navbar-default">
                     <ul
                         class="font-light flex flex-col p-4 md:p-0 mt-4 border-0 rounded-lg bg-transparent md:flex-row md:space-x-8 md:mt-0 md:bg-transparent dark:bg-transparent font-inter ">
                         <li><a href="#"
@@ -128,48 +130,85 @@
             <h3 class="about__title">Quem sou eu</h3>
         </div>
         <div id="about__container_dois">
-            <div>
-                <p class="about__description">Sou um profissional apaixonado por qualidade de software, com experiência
-                    sólida em testes manuais e exploratórios, análise e reporte de bugs, validação de regras de negócio
-                    e atuação em times ágeis.
+            <div id="about__container_description">
+                <p class="about__description">
+                    Sou um profissional apaixonado por qualidade de software, com sólida experiência em <span
+                        class="highlight_white">testes manuais e exploratórios</span>, análise e reporte de bugs, além
+                    da validação de regras de negócio em ambientes ágeis. <br><br>
+                    Também possuo experiência em <span class="highlight">testes de API</span>, garantindo a integridade
+                    e confiabilidade das integrações entre sistemas.
 
-                    Participei ativamente da implementação inicial de automação de testes com Playwright na Deskbee,
-                    contribuindo para maior cobertura de testes e confiabilidade nas releases. Atualmente, estou em
-                    evolução constante nas áreas de automação e desenvolvimento front-end.
+                    Atuei diretamente na implementação inicial da <span class="highlight">automação de testes com
+                        Playwright</span> na Deskbee, contribuindo para o aumento da cobertura de testes e maior
+                    confiabilidade nas entregas. Atualmente, sigo em constante evolução nas áreas de automação, testes
+                    de API e desenvolvimento front-end. <br><br>
 
-                    Meu objetivo é garantir que cada funcionalidade entregue atenda aos mais altos padrões de qualidade,
-                    identificando falhas antes que cheguem ao usuário final.
+                    Tenho como objetivo garantir que cada funcionalidade seja entregue com alto padrão de qualidade,
+                    antecipando falhas e proporcionando a melhor experiência possível para o usuário final.
                 </p>
             </div>
-            <div>
+            <div id="about__container_info">
                 <div id="container_info_person">
                     <div class="icon_info_person">
-
+                        <span class="material-symbols-outlined">
+                            location_on
+                        </span>
                     </div>
                     <div class="container_info_person_description">
+                        <span class="titulo_about_card">Localização</span>
+                        <span class="descricao_about_card">Porto Alegre - RS, Brasil</span>
 
                     </div>
-                    <div id="container_info_person">
-                        <div class="icon_info_person">
-
-                        </div>
-                        <div class="container_info_person_description">
-
-                        </div>
+                </div>
+                <div id="container_info_person">
+                    <div class="icon_info_person">
+                        <span class="material-symbols-outlined">
+                            card_travel
+                        </span>
                     </div>
-                    <div id="container_info_person">
-                        <div class="icon_info_person">
-
-                        </div>
-                        <div class="container_info_person_description">
-
-                        </div>
+                    <div class="container_info_person_description">
+                        <span class="titulo_about_card">Cargo atual</span>
+                        <span class="descricao_about_card">QA Engineer @ Deskbee</span>
                     </div>
+                </div>
+                <div id="container_info_person">
+                    <div class="icon_info_person">
+                        <span class="material-symbols-outlined">
+                            show_chart
+                        </span>
+                    </div>
+                    <div class="container_info_person_description">
+                        <span class="titulo_about_card">Foco</span>
+                        <span class="descricao_about_card">Automação & Front-end</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="container__skills">
+        <div id="skills">
+            <div class="mb-1 flex justify-between font-medium">
+                <span class="skill">Playwright</span>
+                <span class="spec">Automação</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700">
+                <div class="h-4 rounded-full text-center text-xs font-medium text-white leading-none"
+                    style="width: 40%; background: linear-gradient(to right, #3b82f6, #8b5cf6, #ec4899)">
                 </div>
             </div>
         </div>
-
-
+        <div id="skills">
+            <div class="mb-1 flex justify-between font-medium">
+                <span class="skill">Ia nos Testes</span>
+                <span class="spec">Automação</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700">
+                <div class="h-4 rounded-full text-center text-xs font-medium text-white leading-none"
+                    style="width: 85%; background: linear-gradient(to right, #3b82f6, #8b5cf6, #ec4899)">
+                </div>
+            </div>
+        </div>
         <!-- Barra de progresso simples (45%) -->
         <div class="mb-6">
             <span class="skill">Playwright</span>
@@ -179,32 +218,7 @@
                     style="width: 90%; background: linear-gradient(to right, #3b82f6, #8b5cf6, #ec4899)"></div>
             </div>
         </div>
-
-        <div id="container__skills">
-            <div id="skills">
-                <div class="mb-1 flex justify-between font-medium">
-                    <span class="skill">Playwright</span>
-                    <span class="spec">Automação</span>
-                </div>
-                <div class="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700">
-                    <div class="h-4 rounded-full text-center text-xs font-medium text-white leading-none"
-                        style="width: 40%; background: linear-gradient(to right, #3b82f6, #8b5cf6, #ec4899)">
-                    </div>
-                </div>
-            </div>
-            <div id="skills">
-                <div class="mb-1 flex justify-between font-medium">
-                    <span class="skill">Ia nos Testes</span>
-                    <span class="spec">Automação</span>
-                </div>
-                <div class="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700">
-                    <div class="h-4 rounded-full text-center text-xs font-medium text-white leading-none"
-                        style="width: 85%; background: linear-gradient(to right, #3b82f6, #8b5cf6, #ec4899)">
-                    </div>
-                </div>
-            </div>
-        </div>
-
+    </div>
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
