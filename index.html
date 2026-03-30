@@ -372,15 +372,62 @@
                                 </span>Testes com integrações externas (ex: Outlook)</li>
                         </ul>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="projects">
+        <div id="projects__container">
+            <h2 class="experience__sub-title">// Projetos</h2>
+            <h3 class="about__title">O que tenho construído</h3>
+        </div>
+        <div id="projects__container__spec">
+            <div class="projects__container_card">
+                <div class="projects__container_card_content">
+                    <div class="projects__container_card_icon">
+                        <span class="material-symbols-outlined">
+                            experiment
+                        </span>
+                    </div>
+                    <span>Em andamento</span>
+                    <div class="spinner">
+                        <div class="spinner-blade"></div>
+                        <div class="spinner-blade"></div>
+                        <div class="spinner-blade"></div>
+                        <div class="spinner-blade"></div>
+                        <div class="spinner-blade"></div>
+                        <div class="spinner-blade"></div>
+                        <div class="spinner-blade"></div>
+                        <div class="spinner-blade"></div>
+                        <div class="spinner-blade"></div>
+                        <div class="spinner-blade"></div>
+                        <div class="spinner-blade"></div>
+                        <div class="spinner-blade"></div>
+                    </div>
+                </div>
+                <h2>Automação de Testes com Playwright</h2>
+                <p>Implementação de suite de testes automatizados E2E utilizando Playwright e TypeScript para validação
+                    de fluxos críticos da aplicação.</p>
+                <div class="projects__container_card_atributs"><span>Em andamento</span><span>Em
+                        andamento</span><span>Em andamento</span>
+                </div>
+            </div>
 
 
 
+            <div class="projects__container_card">
+                <div class="projects__container_card_content">
+
+                </div>
+            </div>
+            <div class="projects__container_card">
+                <div class="projects__container_card_content">
 
                 </div>
             </div>
         </div>
-
     </div>
+
 
     <!-- Spinner Animado -->
     <div class="spinner">
@@ -401,8 +448,8 @@
     <style>
         .spinner {
             position: relative;
-            width: 60px;
-            height: 60px;
+            width: 13px;
+            height: 13px;
             margin: 60px auto;
         }
 
@@ -410,31 +457,83 @@
             position: absolute;
             top: 0;
             left: 50%;
-            width: 6px;
-            height: 18px;
-            margin-left: -3px;
-            border-radius: 3px;
+            width: 3px;
+            height: 6px;
+            margin-left: -2px;
+            border-radius: 2px;
             background-color: rgb(24, 206, 69);
-            transform-origin: center 30px;
+            transform-origin: center 20px;
             animation: spinner-fade 1s infinite linear;
         }
 
-        .spinner-blade:nth-child(1)  { transform: rotate(0deg);   animation-delay: -1s; }
-        .spinner-blade:nth-child(2)  { transform: rotate(30deg);  animation-delay: -0.9167s; }
-        .spinner-blade:nth-child(3)  { transform: rotate(60deg);  animation-delay: -0.8333s; }
-        .spinner-blade:nth-child(4)  { transform: rotate(90deg);  animation-delay: -0.75s; }
-        .spinner-blade:nth-child(5)  { transform: rotate(120deg); animation-delay: -0.6667s; }
-        .spinner-blade:nth-child(6)  { transform: rotate(150deg); animation-delay: -0.5833s; }
-        .spinner-blade:nth-child(7)  { transform: rotate(180deg); animation-delay: -0.5s; }
-        .spinner-blade:nth-child(8)  { transform: rotate(210deg); animation-delay: -0.4167s; }
-        .spinner-blade:nth-child(9)  { transform: rotate(240deg); animation-delay: -0.3333s; }
-        .spinner-blade:nth-child(10) { transform: rotate(270deg); animation-delay: -0.25s; }
-        .spinner-blade:nth-child(11) { transform: rotate(300deg); animation-delay: -0.1667s; }
-        .spinner-blade:nth-child(12) { transform: rotate(330deg); animation-delay: -0.0833s; }
+        .spinner-blade:nth-child(1) {
+            transform: rotate(0deg);
+            animation-delay: -1s;
+        }
+
+        .spinner-blade:nth-child(2) {
+            transform: rotate(30deg);
+            animation-delay: -0.9167s;
+        }
+
+        .spinner-blade:nth-child(3) {
+            transform: rotate(60deg);
+            animation-delay: -0.8333s;
+        }
+
+        .spinner-blade:nth-child(4) {
+            transform: rotate(90deg);
+            animation-delay: -0.75s;
+        }
+
+        .spinner-blade:nth-child(5) {
+            transform: rotate(120deg);
+            animation-delay: -0.6667s;
+        }
+
+        .spinner-blade:nth-child(6) {
+            transform: rotate(150deg);
+            animation-delay: -0.5833s;
+        }
+
+        .spinner-blade:nth-child(7) {
+            transform: rotate(180deg);
+            animation-delay: -0.5s;
+        }
+
+        .spinner-blade:nth-child(8) {
+            transform: rotate(210deg);
+            animation-delay: -0.4167s;
+        }
+
+        .spinner-blade:nth-child(9) {
+            transform: rotate(240deg);
+            animation-delay: -0.3333s;
+        }
+
+        .spinner-blade:nth-child(10) {
+            transform: rotate(270deg);
+            animation-delay: -0.25s;
+        }
+
+        .spinner-blade:nth-child(11) {
+            transform: rotate(300deg);
+            animation-delay: -0.1667s;
+        }
+
+        .spinner-blade:nth-child(12) {
+            transform: rotate(330deg);
+            animation-delay: -0.0833s;
+        }
 
         @keyframes spinner-fade {
-            0%   { opacity: 1; }
-            100% { opacity: 0.15; }
+            0% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0.15;
+            }
         }
     </style>
 
