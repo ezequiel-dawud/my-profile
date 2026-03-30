@@ -381,6 +381,63 @@
         </div>
 
     </div>
+
+    <!-- Spinner Animado -->
+    <div class="spinner">
+        <div class="spinner-blade"></div>
+        <div class="spinner-blade"></div>
+        <div class="spinner-blade"></div>
+        <div class="spinner-blade"></div>
+        <div class="spinner-blade"></div>
+        <div class="spinner-blade"></div>
+        <div class="spinner-blade"></div>
+        <div class="spinner-blade"></div>
+        <div class="spinner-blade"></div>
+        <div class="spinner-blade"></div>
+        <div class="spinner-blade"></div>
+        <div class="spinner-blade"></div>
+    </div>
+
+    <style>
+        .spinner {
+            position: relative;
+            width: 60px;
+            height: 60px;
+            margin: 60px auto;
+        }
+
+        .spinner-blade {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 6px;
+            height: 18px;
+            margin-left: -3px;
+            border-radius: 3px;
+            background-color: rgb(24, 206, 69);
+            transform-origin: center 30px;
+            animation: spinner-fade 1s infinite linear;
+        }
+
+        .spinner-blade:nth-child(1)  { transform: rotate(0deg);   animation-delay: -1s; }
+        .spinner-blade:nth-child(2)  { transform: rotate(30deg);  animation-delay: -0.9167s; }
+        .spinner-blade:nth-child(3)  { transform: rotate(60deg);  animation-delay: -0.8333s; }
+        .spinner-blade:nth-child(4)  { transform: rotate(90deg);  animation-delay: -0.75s; }
+        .spinner-blade:nth-child(5)  { transform: rotate(120deg); animation-delay: -0.6667s; }
+        .spinner-blade:nth-child(6)  { transform: rotate(150deg); animation-delay: -0.5833s; }
+        .spinner-blade:nth-child(7)  { transform: rotate(180deg); animation-delay: -0.5s; }
+        .spinner-blade:nth-child(8)  { transform: rotate(210deg); animation-delay: -0.4167s; }
+        .spinner-blade:nth-child(9)  { transform: rotate(240deg); animation-delay: -0.3333s; }
+        .spinner-blade:nth-child(10) { transform: rotate(270deg); animation-delay: -0.25s; }
+        .spinner-blade:nth-child(11) { transform: rotate(300deg); animation-delay: -0.1667s; }
+        .spinner-blade:nth-child(12) { transform: rotate(330deg); animation-delay: -0.0833s; }
+
+        @keyframes spinner-fade {
+            0%   { opacity: 1; }
+            100% { opacity: 0.15; }
+        }
+    </style>
+
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
