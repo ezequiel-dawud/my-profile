@@ -19,7 +19,7 @@
 
 #projects__container__spec {
     display: flex;
-    flex-wrap: wrap;
+   
     width: 100%;
     gap: 2%;
     margin-top: 3%;
@@ -160,8 +160,17 @@ p {
 
 @media (max-width: 768px) {
 
+    #projects {
+
+    height: auto;
+
+
+}
+
     #projects__container__spec {
         flex-direction: column;
+        height: auto;
+        margin-top: 0;
     }
 
     .about__title {
