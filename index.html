@@ -441,39 +441,30 @@
 
 
     <!-- Spinner Animado -->
-    <div class="spinner">
-        <div class="spinner-blade"></div>
-        <div class="spinner-blade"></div>
-        <div class="spinner-blade"></div>
-        <div class="spinner-blade"></div>
-        <div class="spinner-blade"></div>
-        <div class="spinner-blade"></div>
-        <div class="spinner-blade"></div>
-        <div class="spinner-blade"></div>
-        <div class="spinner-blade"></div>
-        <div class="spinner-blade"></div>
-        <div class="spinner-blade"></div>
-        <div class="spinner-blade"></div>
-    </div>
+
 
     <style>
-        .spinner {
+        .projects__container_card_status .spinner {
             position: relative;
-            width: 5px;
-            height: 5px;
-            margin: 60px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
+            margin: 0 !important;
         }
 
-        .spinner-blade {
+        .projects__container_card_status .spinner-blade {
             position: absolute;
             top: 0;
             left: 50%;
-            width: 3px;
-            height: 6px;
-            margin-left: -2px;
+            width: 2px;
+            height: 4px;
+            margin-left: -1px;
             border-radius: 2px;
             background-color: rgb(24, 206, 69);
-            transform-origin: center 15px;
+            transform-origin: center 10px;
             animation: spinner-fade 1s infinite linear;
         }
 
