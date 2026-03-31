@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/style/about.css">
     <link rel="stylesheet" href="/style/skills.css">
     <link rel="stylesheet" href="/style/experience.css">
+    <link rel="stylesheet" href="/style/projects.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -386,23 +387,25 @@
                 <div class="projects__container_card_content">
                     <div class="projects__container_card_icon">
                         <span class="material-symbols-outlined">
-                            experiment
+                            flowsheet
                         </span>
                     </div>
-                    <span>Em andamento</span>
-                    <div class="spinner">
-                        <div class="spinner-blade"></div>
-                        <div class="spinner-blade"></div>
-                        <div class="spinner-blade"></div>
-                        <div class="spinner-blade"></div>
-                        <div class="spinner-blade"></div>
-                        <div class="spinner-blade"></div>
-                        <div class="spinner-blade"></div>
-                        <div class="spinner-blade"></div>
-                        <div class="spinner-blade"></div>
-                        <div class="spinner-blade"></div>
-                        <div class="spinner-blade"></div>
-                        <div class="spinner-blade"></div>
+                    <div class="projects__container_card_status">
+                        <span>Em andamento</span>
+                        <div class="spinner">
+                            <div class="spinner-blade"></div>
+                            <div class="spinner-blade"></div>
+                            <div class="spinner-blade"></div>
+                            <div class="spinner-blade"></div>
+                            <div class="spinner-blade"></div>
+                            <div class="spinner-blade"></div>
+                            <div class="spinner-blade"></div>
+                            <div class="spinner-blade"></div>
+                            <div class="spinner-blade"></div>
+                            <div class="spinner-blade"></div>
+                            <div class="spinner-blade"></div>
+                            <div class="spinner-blade"></div>
+                        </div>
                     </div>
                 </div>
                 <h2>Automação de Testes com Playwright</h2>
@@ -448,8 +451,8 @@
     <style>
         .spinner {
             position: relative;
-            width: 13px;
-            height: 13px;
+            width: 5px;
+            height: 5px;
             margin: 60px auto;
         }
 
@@ -462,7 +465,7 @@
             margin-left: -2px;
             border-radius: 2px;
             background-color: rgb(24, 206, 69);
-            transform-origin: center 20px;
+            transform-origin: center 15px;
             animation: spinner-fade 1s infinite linear;
         }
 
