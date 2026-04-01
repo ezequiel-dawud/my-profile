@@ -58,3 +58,28 @@
 }
 
 
+@media (max-width: 768px) {
+
+#contato__buttons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1%;
+    margin-top: 3%;
+    align-items: center;
+    justify-content: center;
+}
+#container_contato{
+  
+    width: 90%;
+
+}
+
+.button_contact_mobile{
+    margin-top: 4%;
+    width: 80%;
+}
+
+}
+
+
