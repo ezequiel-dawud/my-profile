@@ -23,7 +23,13 @@
     margin-top: 3%;
 }
 
-.projects__sub-title {
+#projects__container{
+    margin-right: auto;
+}
+
+
+
+.projects__sub-title{
     font-family: var(--font-mono);
     font-size: var(--text-lg);
     color: var(--color-primary);

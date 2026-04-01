@@ -7,7 +7,7 @@
     align-items: center;
     margin: 0;
     width: 100vw;
-    height: 120vh;
+    height: 90vh;
     padding: 2% 10%;
     position: relative;
     z-index: -1;
@@ -23,11 +23,22 @@
     width: 60%;
 
 }
-#projects__container{
-    text-align: center;
+
+.contato__sub-title{
+    font-family: var(--font-mono);
+    font-size: var(--text-lg);
+    color: var(--color-primary);
+    text-shadow: 1px 1px 20px var(--color-primary);
 }
 
-#projects__container>p {
+#contato__container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+#contato__container>p {
     
     font-family: var(--font-sans);
     font-size: var(--text-lg);
