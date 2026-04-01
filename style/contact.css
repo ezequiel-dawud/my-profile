@@ -1,0 +1,60 @@
+@import url(/style/style.css);
+
+#contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100vw;
+    height: 120vh;
+    padding: 2% 10%;
+    position: relative;
+    z-index: -1;
+    box-sizing: border-box;
+    background:var(--color-bg);
+}
+
+#container_contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+
+}
+#projects__container{
+    text-align: center;
+}
+
+#projects__container>p {
+    
+    font-family: var(--font-sans);
+    font-size: var(--text-lg);
+    color: var(--color-text_dois);
+}
+
+#contato__buttons {
+    display: flex;
+    width: 100%;
+    gap: 1%;
+    margin-top: 3%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.button_contact_github {
+    gap: 3%;
+}
+
+
+.button_contact:hover {
+    background: var(--color-azul);
+    color: var(--color-bg);
+    box-shadow: 0px 0px 10px rgba(25, 230, 230, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+
