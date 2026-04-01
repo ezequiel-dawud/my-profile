@@ -37,6 +37,7 @@
     flex-direction: row;
     width: 100%;
     gap: 2%;
+    margin-bottom: auto;
 }
 
 .skills__container_skill {
@@ -99,7 +100,7 @@
         width: 100vw;
         height: auto;
         display: flex;
-        padding-top: 20%;
+      
         padding: 2% 5%;
     }
 

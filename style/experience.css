@@ -28,11 +28,12 @@
 }
 
 #experience__container {
-    margin-top: 4%;
+    margin-top: 10%;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    margin-bottom: auto;
 }
 
 #experience__container_content {
@@ -165,6 +166,7 @@
 @media (max-width: 768px) {
 
     #experience {
+        margin-top: 20%;
         padding: 0% 4%;
     }
 
