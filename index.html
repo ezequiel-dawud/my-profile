@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ezequiel Dawud</title>
     <link rel="shortcut icon" href="/icon/ico.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/style/style.css">
-    <link rel="stylesheet" href="/style/about.css">
-    <link rel="stylesheet" href="/style/skills.css">
-    <link rel="stylesheet" href="/style/experience.css">
-    <link rel="stylesheet" href="/style/projects.css">
-    <link rel="stylesheet" href="/style/contact.css">
-    <link rel="stylesheet" href="/style/footer.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/about.css">
+    <link rel="stylesheet" href="style/skills.css">
+    <link rel="stylesheet" href="style/experience.css">
+    <link rel="stylesheet" href="style/projects.css">
+    <link rel="stylesheet" href="style/contact.css">
+    <link rel="stylesheet" href="style/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -121,16 +121,18 @@
             </div>
         </div>
         <div>
-            <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-2">
-                <span class="text-xl tracking-widest text-gray-400 ">
-                    scroll
-                </span>
-                <div class="flex flex-col items-center">
-                    <span
-                        class="block w-4 h-4 border-b-2 border-r-2 border-gray-400 rotate-45 animate-scroll delay-300"></span>
-                </div>
-            </div>
+            <a href="#about">
+                <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-2">
+                    <span class="text-xl tracking-widest text-gray-400 ">
+                        scroll
+                    </span>
+                    <div class="flex flex-col items-center">
+                        <span
+                            class="block w-4 h-4 border-b-2 border-r-2 border-gray-400 rotate-45 animate-scroll delay-300"></span>
+                    </div>
+            </a>
         </div>
+    </div>
     </div>
     <div id="about">
         <div id="about__container_um">
@@ -457,7 +459,7 @@
                 <h2>Projetos Front-end</h2>
                 <p>Desenvolvimento de interfaces web responsivas utilizando HTML, CSS e JavaScript, com foco em boas
                     práticas e acessibilidade.</p>
-                <div class="projects__container_card_atributs"><span>HTML</span><span>CSS</span><span>JavaScript</span>
+                <div class="projects__container_card_atributs"><span class="finalized"><a href="https://github.com/ezequiel-dawud/Tela_de_login_responsivo.git" target="_blank">Login responsivo</a></span><span>CSS</span><span>JavaScript</span>
                 </div>
             </div>
 
@@ -545,20 +547,19 @@
 
 
             <div id="contato__buttons">
-                <button class="button_linkedin button_contact_mobile"><a href=""><svg xmlns="http://www.w3.org/2000/svg"
-                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-linkedin w-5 h-5 mr-2">
+                <a href="" class="button_contato"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin w-5 h-5 mr-2">
                             <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
                             </path>
                             <rect width="4" height="12" x="2" y="9"></rect>
                             <circle cx="4" cy="4" r="2"></circle>
-                        </svg>LinkedIn</a></button>
-                <button class="button_contact button_contact_mobile"><a href=""> <i
-                            class="fa-regular fa-envelope"></i>Email</a>
-                </button>
-                <button class=" button_contact button_contact_github button_contact_mobile"><svg
-                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        </svg>LinkedIn</a>
+
+                <a href="" class="button_contato"><i class="fa-regular fa-envelope"></i>Email</a>
+
+                <a href="" class="button_contato"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24">
                         <defs>
                             <style>
                                 .cls-1 {
@@ -567,7 +568,7 @@
                                 }
 
                                 .cls-2 {
-                                    fill: #ffffff;
+                                    fill: currentColor;
                                 }
                             </style>
                         </defs>
@@ -579,17 +580,19 @@
                                     d="M16.24,22a1,1,0,0,1-1-1V18.4a2.15,2.15,0,0,0-.54-1.66,1,1,0,0,1,.61-1.67C17.75,14.78,20,14,20,9.77a4,4,0,0,0-.67-2.22,2.75,2.75,0,0,1-.41-2.06,3.71,3.71,0,0,0,0-1.41,7.65,7.65,0,0,0-2.09,1.09,1,1,0,0,1-.84.15,10.15,10.15,0,0,0-5.52,0,1,1,0,0,1-.84-.15A7.4,7.4,0,0,0,7.52,4.08a3.52,3.52,0,0,0,0,1.41,2.84,2.84,0,0,1-.43,2.08A4.07,4.07,0,0,0,6.42,9.8c0,3.89,1.88,4.93,4.7,5.29a1,1,0,0,1,.82.66,1,1,0,0,1-.21,1,2.06,2.06,0,0,0-.55,1.56V21a1,1,0,0,1-2,0v-.57a6,6,0,0,1-5.27-2.09,3.9,3.9,0,0,0-1.16-.88,1,1,0,1,1,.5-1.94,4.93,4.93,0,0,1,2,1.36c1,1,2,1.88,3.9,1.52h0a3.89,3.89,0,0,1,.23-1.58c-2.06-.52-5-2-5-7a6,6,0,0,1,1-3.33.85.85,0,0,0,.13-.62,5.69,5.69,0,0,1,.33-3.21,1,1,0,0,1,.63-.57c.34-.1,1.56-.3,3.87,1.2a12.16,12.16,0,0,1,5.69,0c2.31-1.5,3.53-1.31,3.86-1.2a1,1,0,0,1,.63.57,5.71,5.71,0,0,1,.33,3.22.75.75,0,0,0,.11.57,6,6,0,0,1,1,3.34c0,5.07-2.92,6.54-5,7a4.28,4.28,0,0,1,.22,1.67V21A1,1,0,0,1,16.24,22Z" />
                             </g>
                         </g>
-                    </svg> <img src="" alt="">Github</a>
-                </button>
+                    </svg>Github</a>
             </div>
         </div>
     </div>
-<footer>
-    <div class="footer_line"></div>
+    <footer>
+        <div class="footer_line"></div>
         <div id="footer">
-            <span class="footer">© 2026 Ezequiel Dawud </span> <span class="footer">- Feito com  <img src="/icon/1487717002-heart_81641.svg" alt="Heart"></span> <span class="footer">- Muito  <img src="/icon/coffee_121492.svg" alt="Coffee"> </span> <span class="footer">- E nada de  <img src="/icon/1494258023-bugladybugspringinsectautumn_84344.svg" alt="Bug"></span>
+            <span class="footer">© 2026 Ezequiel Dawud </span> <span class="footer">- Feito com <img
+                    src="/icon/1487717002-heart_81641.svg" alt="Heart"></span> <span class="footer">- Muito <img
+                    src="/icon/coffee_121492.svg" alt="Coffee"> </span> <span class="footer">- E nada de <img
+                    src="/icon/1494258023-bugladybugspringinsectautumn_84344.svg" alt="Bug"></span>
         </div>
-</footer>
+    </footer>
 
     <!-- Spinner Animado -->
 

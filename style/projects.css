@@ -164,7 +164,12 @@ p {
     color: var(--color-text-muted);
     border-radius: 5px;
 }
-
+.projects__container_card_atributs > .finalized {
+    background: var(--color-degrade);
+    color: var(--color-bg);
+    font-family: var(--font-sans);
+    font-weight: 800;
+}
 
 
 @media (max-width: 768px) {
