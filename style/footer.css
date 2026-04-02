@@ -41,16 +41,25 @@ footer{
 
     footer{
         width: 95%;
-        align-items: center;
-        justify-content: center;
+        flex-direction: column;
+        margin-top: 6%;
     }
+
     #footer {
-        flex-direction: row;
-        gap: 0.5%;
+        margin-top: 7%;
+        flex-direction: column;
+        gap: 1.5%;
     }
+
     .footer_line {
         width: 90%;
         align-items: center;
         justify-content: center;
+    }
+
+    .footer{
+        font-size: var(--text-lg);
+        display: flex;
+        align-items: center;
     }
 }
