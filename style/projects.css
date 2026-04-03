@@ -63,11 +63,6 @@
     pointer-events: none;
 }
 
-.projects__container_card:hover::before {
-    background: var(--color-primary);
-    transform: scaleX(1.1);
-}
-
 .projects__container_card_content {
     padding: 0% 0%;
     margin: 0;
@@ -127,7 +122,9 @@
     gap: 15px;
     margin-top: 15px;
     margin-right: auto;
+    flex-wrap: wrap;
 }
+
 
 .projects__container_card_atributs > span{
     font-size: var(--text-sm);
@@ -155,7 +152,7 @@
 
 .projects__container_card_atributs > span > a > .material-symbols-outlined {
     color: #f5f7f4;
-    animation: 4s border-color-finish linear infinite;
+ 
     font-variation-settings: 'wght' 100;
 }
 
@@ -186,9 +183,25 @@
     margin-right: auto;
 }
 
+.projects__container_card_atributs-static[title="Visite o projeto"]:hover{
+    animation: 2s border-color-finish linear infinite;
+   
+}
 
 
 @keyframes border-color-finish {
+      0%, 100% {
+        border-color: #1af025;
+    }
+    33% {
+        border-color: #fff;
+    }
+    66% {
+        border-color: #1af025;
+    }
+}
+
+@keyframes font-color-finish {
     0%, 100% {
         color: #1af025;
     }
@@ -199,6 +212,7 @@
         color: #31bb15;
     }
 }
+
 
 
 
@@ -219,7 +233,7 @@
     }
 
     .projects__container_card {
-        margin-top: 5%;
+        margin-top: 10%;
         width: 100%;
         height: auto;
         padding: 5%;

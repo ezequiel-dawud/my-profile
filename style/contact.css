@@ -95,6 +95,10 @@
 
 @media (max-width: 768px) {
 
+    #contato{
+        height: 45vh;
+    }
+
 #contato__buttons {
     display: flex;
     flex-direction: column;
